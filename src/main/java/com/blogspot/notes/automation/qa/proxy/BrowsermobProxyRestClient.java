@@ -29,7 +29,7 @@ public class BrowsermobProxyRestClient {
 
 	public BrowsermobProxyRestClient(final String host, final int port) {
 		this.client = ClientBuilder.newClient();
-		this.service = client.target("http://" + host + ":" + port + "/proxy?trustAllServers=true");
+		this.service = client.target("http://" + host + ":" + port + "/proxy");
 	}
 
 	public void dispose() {
